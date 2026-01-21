@@ -1,0 +1,56 @@
+import biathlonresults
+import pandas as pd
+race_course_analytics = biathlonresults.analytic_results("BT2425SWRLCP01SWMS", type_id=biathlonresults.consts.AnalysisType.TOTAL_COURSE_TIME)
+df = pd.DataFrame(race_course_analytics["Results"])
+print(df.columns)
+print(df[["ResultOrder", "IBUId", "Name", "TotalTime", "Behind", "Shootings", "Result"]].iloc[:10])
+list_ = df["IBUId"].tolist()
+#print(list_)
+
+# TOTAL_COURSE_TIME
+# TOTAL_RANGE_TIME
+# TOTAL_SHOOTING_TIME
+# SKI_TIME
+# PURSUIT_TIME
+# BEST_WOMEN
+# BEST_MEN
+# RESULTS_LEG_1
+# RESULTS_LEG_2
+# RESULTS_LEG_3
+# RESULTS_LEG_4
+# COURSE_TIME_LEG_1
+# COURSE_TIME_LEG_2
+# COURSE_TIME_LEG_3
+# COURSE_TIME_LEG_4
+# RANGE_TIME_LEG_1
+# RANGE_TIME_LEG_2
+# RANGE_TIME_LEG_3
+# RANGE_TIME_LEG_4
+# COURSE_TIME_LAP_1
+# COURSE_TIME_LAP_2
+# COURSE_TIME_LAP_3
+# COURSE_TIME_LAP_4
+# COURSE_TIME_LAP_5
+# COURSE_TIME_LAP_6
+# COURSE_TIME_LAP_7
+# COURSE_TIME_LAP_8
+# COURSE_TIME_LAP_9
+# COURSE_TIME_LAP_10
+# COURSE_TIME_LAP_11
+# COURSE_TIME_LAP_12
+# RANGE_TIME_1
+# RANGE_TIME_2
+# RANGE_TIME_3
+# RANGE_TIME_4
+# RANGE_TIME_5
+# RANGE_TIME_6
+# RANGE_TIME_7
+# RANGE_TIME_8
+# SHOOTING_TIME_1
+# SHOOTING_TIME_2
+# SHOOTING_TIME_3
+# SHOOTING_TIME_4
+# SHOOTING_TIME_5
+# SHOOTING_TIME_6
+# SHOOTING_TIME_7
+# SHOOTING_TIME_8

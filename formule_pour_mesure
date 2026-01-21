@@ -1,0 +1,6 @@
+Average_Time (mm:ss.d) = 
+VAR AvgSec = AVERAGE('public results_2122'[average_shooting_time])
+VAR Minutes = INT(AvgSec / 60)
+VAR Seconds = MOD(AvgSec, 60)
+RETURN
+FORMAT(Minutes, "0") & ":" & FORMAT(Seconds, "00.0")
