@@ -1,0 +1,19 @@
+# Core data processing
+pandas>=2.0
+numpy>=1.23
+
+# Progress bars
+tqdm>=4.64
+
+# Biathlon API client
+biathlonresults
+
+# CLI utilities
+argparse
+
+# Optional (recommended for research & ML)
+scikit-learn
+matplotlib
+seaborn
+pyarrow  # for parquet support
+jupyter
